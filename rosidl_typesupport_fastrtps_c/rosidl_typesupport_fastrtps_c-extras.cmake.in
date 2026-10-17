@@ -22,17 +22,17 @@ else()
     "rosidl_typesupport_fastrtps_c_generate_interfaces.cmake")
 
   set(rosidl_typesupport_fastrtps_c_BIN
-    "${rosidl_typesupport_fastrtps_c_DIR}/../../../lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c")
+    "@_install_prefix@/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c")
   normalize_path(rosidl_typesupport_fastrtps_c_BIN
     "${rosidl_typesupport_fastrtps_c_BIN}")
 
   set(rosidl_typesupport_fastrtps_c_GENERATOR_FILES
-    "${rosidl_typesupport_fastrtps_c_DIR}/../../../@PYTHON_INSTALL_DIR@/rosidl_typesupport_fastrtps_c/__init__.py")
+    "@_install_prefix@/@PYTHON_INSTALL_DIR@/rosidl_typesupport_fastrtps_c/__init__.py")
   normalize_path(rosidl_typesupport_fastrtps_c_GENERATOR_FILES
     "${rosidl_typesupport_fastrtps_c_GENERATOR_FILES}")
 
   set(rosidl_typesupport_fastrtps_c_TEMPLATE_DIR
-    "${rosidl_typesupport_fastrtps_c_DIR}/../resource")
+    "@_install_prefix@/share/rosidl_typesupport_fastrtps_c/resource")
   normalize_path(rosidl_typesupport_fastrtps_c_TEMPLATE_DIR
     "${rosidl_typesupport_fastrtps_c_TEMPLATE_DIR}")
 endif()
